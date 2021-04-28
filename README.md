@@ -6,3 +6,8 @@
 1. HTML
 2. SCSS
 
+### [Folder Struucture](https://medium.com/@dannyhuang_75970/sass-project-structure-for-big-projects-8c4a740846ee)
+
+### Others
+1. [x] Accessibility 
+2. [x] Responsiveness
