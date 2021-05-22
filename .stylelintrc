@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-prettier"
+
+    ],
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "color-hex-case": [
+            "lower",
+            {
+                "message": "Lowercase letters are easier to distinguish from numbers"
+            }
+        ],
+
+    }
+}
