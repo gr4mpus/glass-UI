@@ -13,6 +13,49 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #252324;
+  padding: 5rem;
+}
+
+.plr-d {
+  padding: 0 2.4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo img {
+  height: 4rem;
+  width: 3rem;
+}
+.nav__titles {
+  display: inherit;
+}
+.nav__titles .nav-title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.nav__user {
+  display: inherit;
+  font-size: 1.2rem;
+}
+
+.btn:link, .btn:active, .btn:visited {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+}
+.btn--rounded {
+  border-radius: 4rem;
+}
+.btn--black {
+  background-color: #252324;
+  color: #e2e2e2;
 }
 
 /*# sourceMappingURL=style.css.map */

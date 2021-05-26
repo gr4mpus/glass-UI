@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        img {
+            height: 4rem;
+            width: 3rem;
+        }
+    }
+
+    &__titles {
+        display: inherit;
+
+        .nav-title {
+            font-weight: 500;
+            font-size: $font-l;
+        }
+    }
+
+    &__user {
+        display: inherit;
+        font-size: $font-xs;
+    }
+}
