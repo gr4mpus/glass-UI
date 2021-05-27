@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    padding: 15rem 0;
+
+    &__left {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__right {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.card-col {
+    display: flex;
+
+    &__empty,
+    &__left,
+    &__right {
+        flex: 1;
+    }
+
+    &__balance,
+    &__large {
+        flex: 3;
+    }
+}

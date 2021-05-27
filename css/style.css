@@ -15,13 +15,95 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #252324;
-  padding: 5rem;
+  padding: 4rem 16rem;
+}
+
+.fl {
+  font-weight: 300;
+}
+
+.fr {
+  font-weight: 400;
+}
+
+.fm {
+  font-weight: 500;
+}
+
+.fb {
+  font-weight: 900;
+}
+
+.fxs {
+  font-size: 1.2rem;
+}
+
+.fs {
+  font-size: 1.6rem;
+}
+
+.fl {
+  font-size: 2rem;
+}
+
+.fxl {
+  font-size: 2.8rem;
+}
+
+.fxxl {
+  font-size: 6rem;
 }
 
 .plr-d {
   padding: 0 2.4rem;
+}
+
+.pl-d {
+  padding-left: 2.4rem;
+}
+
+.ptb-d {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.ptb-xl {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pd {
+  padding: 2.5rem;
+}
+
+.card-icon {
+  border-radius: 0.8rem;
+  border: 1px solid #252324;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+.card-icon img {
+  width: 3rem;
+}
+
+.img-icon {
+  width: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ms {
+  margin: 0.5rem;
+}
+
+.mr-l {
+  margin-right: 6rem;
 }
 
 .nav {
@@ -45,6 +127,10 @@ body {
   font-size: 1.2rem;
 }
 
+.btn {
+  text-align: center;
+  border-radius: 0.5rem;
+}
 .btn:link, .btn:active, .btn:visited {
   text-decoration: none;
   padding: 1rem 1.5rem;
@@ -56,6 +142,113 @@ body {
 .btn--black {
   background-color: #252324;
   color: #e2e2e2;
+}
+
+.card {
+  box-shadow: 3px 2px 9px -4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 3px 2px 9px -4px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 3px 2px 9px -4px rgba(0, 0, 0, 0.9);
+  padding: 1.7rem 2rem;
+  border-radius: 1rem;
+}
+
+.card-1 {
+  display: flex;
+  align-items: center;
+}
+.card-1__icon {
+  width: 3.5rem;
+}
+.card-1__detail {
+  flex: 8;
+}
+.card-1__btn {
+  display: inline-block;
+  width: 10rem;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.1rem 1rem;
+}
+
+.card-2 {
+  position: relative;
+  padding: 2rem;
+}
+.card-2__top {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+}
+.card-2__bottom {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+}
+.card-2__combined {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-2__combined__amount {
+  font-size: 2.8rem;
+}
+.card-2__text {
+  font-size: 1.2rem;
+}
+.card-2__cardnum {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num__stars {
+  font-size: 2.8rem;
+  letter-spacing: 0.3rem;
+}
+.num__digits {
+  font-size: 1.6rem;
+}
+
+.details__para {
+  font-size: 1.6rem;
+}
+.details__title {
+  font-size: 6rem;
+}
+.details__description {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  padding: 15rem 0;
+}
+.container__left {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container__right {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.card-col {
+  display: flex;
+}
+.card-col__empty, .card-col__left, .card-col__right {
+  flex: 1;
+}
+.card-col__balance, .card-col__large {
+  flex: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
