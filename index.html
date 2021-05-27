@@ -1,213 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Glass UI</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Glass UI</title>
-</head>
+    <body>
+        <nav class="nav">
+            <!-- logo -->
+            <span class="nav__logo">
+                <img src="../img/water.png" alt="" />
+            </span>
 
-<body>
-    <nav class="nav">
-        <!-- logo -->
-        <span class="nav__logo">
-            <img src="../img/water.png" alt="">
-        </span>
+            <!-- titles -->
+            <span class="nav__titles">
+                <h3 class="nav-title plr-d">We're Hiring !</h3>
+                <span>.</span>
+                <h3 class="nav-title plr-d">For Freelancer</h3>
+                <span>.</span>
+                <h3 class="nav-title plr-d">Payment</h3>
+            </span>
 
-        <!-- titles -->
-        <span class="nav__titles">
-            <h3 class="nav-title plr-d">We're Hiring !</h3>
-            <span>.</span>
-            <h3 class="nav-title plr-d">For Freelancer</h3>
-            <span>.</span>
-            <h3 class="nav-title plr-d">Payment</h3>
-        </span>
+            <!-- login/signup -->
+            <span class="nav__user">
+                <a class="btn" href="">Log in</a>
+                <a class="btn btn--rounded btn--black" href="">Sign Up</a>
+            </span>
+        </nav>
+        <div class="wrapper">
+            <main>
+                <div class="container">
+                    <div class="container__left details">
+                        <p class="details__para fl ptb-xl">- For Freelancers</p>
 
-        <!-- login/signup -->
-        <span class="nav__user">
-            <a class="btn" href="">Log in</a>
-            <a class="btn btn--rounded btn--black" href="">Sign Up</a>
-        </span>
-    </nav>
-    <main>
-        <div class="container">
-            <div class="container__left details">
-                <p class="details__para fl ptb-xl">
-                    - For Freelancers
-                </p>
+                        <h1 class="details__title fb ptb-xl">
+                            Payment Made Easy.
+                        </h1>
+                        <p class="details__description fr ptb-xl">
+                            Free Payment Gateway, Supports Netbanking.
+                            <br />
+                            Credit, Debit Cards, UPI etc.
+                        </p>
 
-                <h1 class="details__title fb ptb-xl">
-                    Payment Made Easy.
-                </h1>
-                <p class="details__description fr ptb-xl">
-                    Free Payment Gateway, Supports Netbanking.
-                    <br>
-                    Credit, Debit Cards, UPI etc.
-                </p>
-
-                <a href="" class="details__more underlined-link fm ptb-xl">
-                    Learn More
-                </a>
-            </div>
-            <div class="container__right">
-                <div class="row">
-                    <div class="card-col">
-                        <div class="card-col__empty"></div>
-                        <div class="card card-col__balance card-1 ms">
-                            <div class="user-card__icon card-icon">
-                                <img src="../img/wallet.png" alt="" class="">
-                            </div>
-                            <div class="card-1__detail pl-d">
-                                <p class="card-1__detail__top fxs fr">
-                                    Current Balance
-                                </p>
-                                <p class="card-1__detail__bottom fl fm">
-                                    $290.5
-                                </p>
-                            </div>
-                            <a class="card-1__btn btn btn--black " href="">Add More</a>
-                        </div>
-                        <div class="card-col__empty"></div>
-
+                        <a
+                            href=""
+                            class="details__more underlined-link fm ptb-xl"
+                        >
+                            Learn More
+                        </a>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="card-col">
-                        <div class="card-col__left">
-                            <div class="card-out">
-                                <div class="card user-card ms">
+                    <div class="container__right">
+                        <div class="row">
+                            <div class="card-col">
+                                <div class="card-col__empty"></div>
+                                <div class="card card-col__balance card-1 ms">
                                     <div class="user-card__icon card-icon">
-                                        <img src="../img/user-female.png" alt="" class="">
+                                        <img
+                                            src="../img/wallet.png"
+                                            alt=""
+                                            class=""
+                                        />
                                     </div>
+                                    <div class="card-1__detail pl-d">
+                                        <p class="card-1__detail__top fxs fr">
+                                            Current Balance
+                                        </p>
+                                        <p class="card-1__detail__bottom fl fm">
+                                            $290.5
+                                        </p>
+                                    </div>
+                                    <a
+                                        class="card-1__btn btn btn--black"
+                                        href=""
+                                        >Add More</a
+                                    >
+                                </div>
+                                <div class="card-col__empty"></div>
+                            </div>
+                        </div>
 
-                                    <div class="user-card__details">
-                                        <div class="user-card__details__top text-center ptb-d">
-                                            Kelly Jennifer
-                                        </div>
-                                        <div class="user-card__details__bottom text-center ptb-d">
-                                            Tester
+                        <div class="row">
+                            <div class="card-col">
+                                <div class="card-col__left">
+                                    <div class="card-out">
+                                        <div class="card user-card ms">
+                                            <div
+                                                class="
+                                                    user-card__icon
+                                                    card-icon
+                                                "
+                                            >
+                                                <img
+                                                    src="../img/user-female.png"
+                                                    alt=""
+                                                    class=""
+                                                />
+                                            </div>
+
+                                            <div class="user-card__details">
+                                                <div
+                                                    class="
+                                                        user-card__details__top
+                                                        text-center
+                                                        ptb-d
+                                                    "
+                                                >
+                                                    Kelly Jennifer
+                                                </div>
+                                                <div
+                                                    class="
+                                                        user-card__details__bottom
+                                                        text-center
+                                                        ptb-d
+                                                    "
+                                                >
+                                                    Tester
+                                                </div>
+                                            </div>
+                                            <a
+                                                class="
+                                                    card-1__btn
+                                                    btn btn--black btn--rounded
+                                                    ptb-d
+                                                "
+                                                href=""
+                                                >Pay Now</a
+                                            >
                                         </div>
                                     </div>
-                                    <a class="card-1__btn btn btn--black btn--rounded ptb-d" href="">Pay Now</a>
                                 </div>
 
+                                <div class="card-col__large card card-2 ms pd">
+                                    <img
+                                        class="card-2__top img-icon"
+                                        src="../img/card-top.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="card-2__bottom img-icon"
+                                        src="../img/card-bottom.png"
+                                        alt=""
+                                    />
+
+                                    <div class="card-2__icon pl-d ptb-d">
+                                        <img
+                                            src="../img/card-logo.png"
+                                            class="img-icon"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="card-2__combined ptb-d">
+                                        <h2 class="card-2__combined__amount">
+                                            $ 6421.50
+                                        </h2>
+
+                                        <img
+                                            src="../img/dots.png"
+                                            alt=""
+                                            class="
+                                                card2__combined__dots
+                                                img-icon
+                                            "
+                                        />
+                                    </div>
+
+                                    <p class="card-2__text ptb-d">Balance</p>
+
+                                    <div class="card-2__cardnum num ptb-d mr-l">
+                                        <span class="num__stars"> **** </span>
+
+                                        <span class="num__stars"> **** </span>
+
+                                        <span class="num__stars"> **** </span>
+
+                                        <span class="num__digits"> 3667 </span>
+                                    </div>
+                                </div>
+
+                                <div class="card-col__empty"></div>
                             </div>
                         </div>
 
-                        <div class="card-col__large card card-2  ms pd">
-                            <img class="card-2__top img-icon" src="../img/card-top.png" alt="">
-                            <img class="card-2__bottom img-icon" src="../img/card-bottom.png" alt="">
+                        <div class="row">
+                            <div class="card-col">
+                                <div class="card-col__empty"></div>
+                                <div class="card-col__balance">
+                                    <div class="card card-1">
+                                        <div class="user-card__icon card-icon">
+                                            <img
+                                                src="../img/bill.png"
+                                                alt=""
+                                                class=""
+                                            />
+                                        </div>
+                                        <div class="card-1__detail pl-d fxs fr">
+                                            <p class="card-1__detail__top">
+                                                Outstanding
+                                            </p>
+                                            <p
+                                                class="
+                                                    card-1__detail__bottom
+                                                    fl
+                                                    fm
+                                                "
+                                            >
+                                                $87.5
+                                            </p>
+                                        </div>
+                                        <a
+                                            class="card-1__btn btn btn--black"
+                                            href=""
+                                            >Add More</a
+                                        >
+                                    </div>
 
-                            <div class="card-2__icon pl-d ptb-d">
-                                <img src="../img/card-logo.png" class="img-icon" alt="">
+                                    <div class="card card-1">
+                                        <div class="user-card__icon card-icon">
+                                            <img
+                                                src="../img/bill.png"
+                                                alt=""
+                                                class=""
+                                            />
+                                        </div>
+                                        <div class="card-1__detail pl-d">
+                                            <p
+                                                class="
+                                                    card-1__detail__top
+                                                    fxs
+                                                    fr
+                                                "
+                                            >
+                                                Outstanding
+                                            </p>
+                                            <p
+                                                class="
+                                                    card-1__detail__bottom
+                                                    fl
+                                                    fm
+                                                "
+                                            >
+                                                $87.5
+                                            </p>
+                                        </div>
+                                        <a
+                                            class="card-1__btn btn btn--black"
+                                            href=""
+                                            >Add More</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-col__right">
+                                    <div class="card-out">
+                                        <div class="card user-card ms">
+                                            <div
+                                                class="
+                                                    user-card__icon
+                                                    card-icon
+                                                "
+                                            >
+                                                <img
+                                                    src="../img/user-male.svg"
+                                                    alt=""
+                                                    class=""
+                                                />
+                                            </div>
+
+                                            <div class="user-card__details">
+                                                <div
+                                                    class="
+                                                        user-card__details__top
+                                                        text-center
+                                                        ptb-d
+                                                    "
+                                                >
+                                                    Thomas Josef
+                                                </div>
+                                                <div
+                                                    class="
+                                                        user-card__details__bottom
+                                                        text-center
+                                                        ptb-d
+                                                    "
+                                                >
+                                                    Designer
+                                                </div>
+                                            </div>
+                                            <a
+                                                class="
+                                                    card-1__btn
+                                                    btn btn--black btn--rounded
+                                                    ptb-d
+                                                "
+                                                href=""
+                                                >Pay Now</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="card-2__combined ptb-d">
-                                <h2 class="card-2__combined__amount">
-                                    $ 6421.50
-                                </h2>
-
-                                <img src="../img/dots.png" alt="" class="card2__combined__dots img-icon">
-                            </div>
-
-                            <p class="card-2__text ptb-d">
-                                Balance
-                            </p>
-
-                            <div class="card-2__cardnum num ptb-d mr-l">
-                                <span class="num__stars">
-                                    ****
-                                </span>
-
-                                <span class="num__stars">
-                                    ****
-                                </span>
-
-                                <span class="num__stars">
-                                    ****
-                                </span>
-
-                                <span class="num__digits">
-                                    3667
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-col__empty">
-
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="card-col">
-                        <div class="card-col__empty"></div>
-                        <div class="card-col__balance">
-                            <div class="card card-1">
-                                <div class="user-card__icon card-icon">
-                                    <img src="../img/bill.png" alt="" class="">
-                                </div>
-                                <div class="card-1__detail pl-d fxs fr">
-                                    <p class="card-1__detail__top">
-                                        Outstanding
-                                    </p>
-                                    <p class="card-1__detail__bottom fl fm">
-                                        $87.5
-                                    </p>
-                                </div>
-                                <a class="card-1__btn btn btn--black " href="">Add More</a>
-                            </div>
-
-                            <div class="card card-1">
-                                <div class="user-card__icon card-icon">
-                                    <img src="../img/bill.png" alt="" class="">
-                                </div>
-                                <div class="card-1__detail pl-d">
-                                    <p class="card-1__detail__top fxs fr">
-                                        Outstanding
-                                    </p>
-                                    <p class="card-1__detail__bottom fl fm">
-                                        $87.5
-                                    </p>
-                                </div>
-                                <a class="card-1__btn btn btn--black " href="">Add More</a>
-                            </div>
-
-                        </div>
-                        <div class="card-col__right">
-                            <div class="card-out">
-                                <div class="card user-card ms">
-                                    <div class="user-card__icon card-icon">
-                                        <img src="../img/user-male.svg" alt="" class="">
-                                    </div>
-
-                                    <div class="user-card__details">
-                                        <div class="user-card__details__top text-center ptb-d">
-                                            Thomas Josef
-                                        </div>
-                                        <div class="user-card__details__bottom text-center ptb-d">
-                                            Designer
-                                        </div>
-                                    </div>
-                                    <a class="card-1__btn btn btn--black btn--rounded ptb-d" href="">Pay Now</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+            </main>
+            <footer></footer>
         </div>
-    </main>
-    <footer></footer>
-</body>
-
+    </body>
 </html>

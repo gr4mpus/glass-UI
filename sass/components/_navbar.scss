@@ -24,3 +24,9 @@
         font-size: $font-xs;
     }
 }
+
+@media (max-width: 768px) {
+    .nav__titles {
+        display: none;
+    }
+}

@@ -11,12 +11,30 @@
 
     &__right {
         flex: 1;
+        min-width: 70rem;
     }
 }
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        &__right {
+            flex: 1;
+            min-width: 20rem;
+        }
+    }
+}
+
+@media (max-width: 1558px) {
+    .container {
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        padding: 2rem 0;
     }
 }
 
@@ -32,5 +50,11 @@
     &__balance,
     &__large {
         flex: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-col {
+        flex-direction: column;
     }
 }

@@ -30,6 +30,32 @@
     padding: 1.1rem 1rem;
 }
 
+@media (max-width: 768px) {
+    .user-card {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.7rem 2rem;
+
+        &__details {
+            flex: 8;
+            padding-left: 2.4rem;
+            &__top {
+                text-align: left;
+                font-size: $font-xs;
+                font-weight: $regular;
+                padding: 0;
+            }
+
+            &__bottom {
+                text-align: left;
+                font-size: $font-l;
+                font-weight: $medium;
+                padding: 0;
+            }
+        }
+    }
+}
+
 .card-2 {
     position: relative;
     padding: 2rem;
@@ -57,8 +83,8 @@
             font-size: $font-xl;
         }
 
-        &__dots {
-        }
+        // &__dots {
+        // }
     }
 
     &__text {
