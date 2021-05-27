@@ -1,0 +1,47 @@
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $default;
+    padding: 4rem 16rem;
+}
+
+// font weight
+
+.f-light {
+    font-weight: $light;
+}
+
+.fr {
+    font-weight: $regular;
+}
+
+.fm {
+    font-weight: $medium;
+}
+
+.fb {
+    font-weight: $bold;
+}
+
+// Size
+.fxs {
+    font-size: $font-xs;
+}
+
+.fs {
+    font-size: $font-s;
+}
+
+.fl {
+    font-size: $font-l;
+}
+
+.fxl {
+    font-size: $font-xl;
+}
+
+.fxxl {
+    font-size: $font-xxl;
+}
