@@ -44,7 +44,7 @@
   },
   "lint-staged": {
     "**/*.{html,css,scss,json,md}": [
-      "stylelint .",
+      "stylelint",
       "prettier --config .prettierrc --write",
       "git add"
     ]
