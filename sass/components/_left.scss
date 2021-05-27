@@ -1,0 +1,13 @@
+.details {
+    &__para {
+        font-size: $font-s;
+    }
+
+    &__title {
+        font-size: $font-xxl;
+    }
+
+    &__description {
+        font-size: $font-l;
+    }
+}

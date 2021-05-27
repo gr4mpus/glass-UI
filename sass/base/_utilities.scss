@@ -1,0 +1,49 @@
+.plr-d {
+    padding: 0 2.4rem;
+}
+
+.pl-d {
+    padding-left: 2.4rem;
+}
+
+.ptb-d {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.ptb-xl {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pd {
+    padding: 2.5rem;
+}
+
+.card-icon {
+    border-radius: 0.8rem;
+    border: 1px solid $default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    img {
+        width: 3rem;
+    }
+}
+
+.img-icon {
+    width: 3.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ms {
+    margin: 0.5rem;
+}
+
+.mr-l {
+    margin-right: 6rem;
+}
