@@ -10,7 +10,8 @@
 
 ### Design Idea
 
-Following this [Reference Design](https://dribbble.com/shots/14377558-Header-UI)
+1. [Reference Design 1](https://dribbble.com/shots/14377558-Header-UI)
+2. [Reference Design 2](https://uxdesign.cc/glassmorphism-in-user-interfaces-1f39bb1308c9)
 Suggestions:
 
 -   expand on the design description in words
