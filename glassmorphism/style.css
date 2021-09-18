@@ -1,0 +1,443 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    /* background: radial-gradient(rgb(114,226,246),rgb(63,123,209),rgb(249,49,156)); */
+    background: radial-gradient(
+        circle at bottom,
+        rgb(249, 49, 156) 40%,
+        rgb(63, 123, 209),
+        rgb(114, 226, 246)
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.glass-box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.glass-box {
+    overflow: hidden;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    box-shadow: 0 0 30px 10px rgb(57 17 87 / 40%);
+}
+.glass-box-2 {
+    backdrop-filter: blur(6px);
+}
+
+/* ===============
+specific styles
+*/
+
+.main-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.account-summary {
+    height: 553px;
+    width: 425px;
+    border-radius: 30px;
+    position: relative;
+    overflow: visible;
+}
+.account-summary::before {
+    border-radius: inherit;
+}
+.account-summary-header {
+    background-color: rgb(253, 246, 253);
+    height: 142px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    padding: 50px 65px 35px 65px;
+}
+
+.account-summary-header .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.account-summary-header .header-content .title .account-balance {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(6, 72, 210);
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.account-summary-header .header-content .title .caption {
+    margin: 0;
+    color: rgb(184, 184, 184);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.account-summary .tab-container ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.account-summary .tab-container {
+    padding: 20px;
+    position: relative;
+}
+.account-summary .tab-container ul.tabs {
+    margin: 0 20px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 13px;
+    position: relative;
+    box-shadow: none;
+}
+
+.account-summary .tab-container ul.tabs li {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #838383;
+    font-weight: 500;
+}
+.account-summary .tab-container ul.tabs li.active {
+    background: rgb(253, 246, 253);
+    border-radius: 13px;
+    box-shadow: 12px 10px 20px 0 hsl(244deg 25% 21% / 30%);
+    font-weight: bold;
+}
+
+.tab-container .tab-content {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    width: 344px;
+
+    /* border: 1px solid rgb(255,255,255,0.4);
+    border-top: 0; */
+}
+
+.card .top {
+    backdrop-filter: brightness(1.4);
+    padding: 25px 28px 0 27px;
+}
+.card .bottom {
+    padding: 0 28px 30px 27px;
+}
+.card p {
+    margin: 0;
+}
+.card .top .logo {
+    display: block;
+    position: relative;
+    top: -2px;
+    background: url(/assets/glassmorphism/images/icons/globe.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 7px;
+}
+
+.card .top .bank-name {
+    font-size: 10px;
+}
+
+.card .top .category {
+    padding: 25px 0 21px 0;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    filter: opacity(0.3);
+    color: white;
+}
+.card .bottom .card-number {
+    font-size: 16px;
+    letter-spacing: 6.7px;
+    font-family: monospace;
+    white-space: nowrap;
+    padding-top: 26px;
+}
+.card .bottom .card-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.card-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-list .item {
+    position: relative;
+}
+.card-list .item.focus {
+    margin: 0 17px;
+}
+.card-list .item.focus .logo {
+    background: url(/assets/glassmorphism/images/icons/globe_blue.svg);
+}
+.card-list .item.focus .bank-name {
+    color: rgb(6, 72, 210);
+    font-weight: bold;
+}
+.card-list .item.focus .category {
+    filter: opacity(0.3) contrast(0.5);
+}
+.card-options {
+    width: 240px;
+    height: 119px;
+    border-radius: 15px;
+    position: absolute;
+    top: -60px;
+    left: -30px;
+    padding: 20px;
+}
+
+.card-options .exp {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+}
+.card-options button {
+    background-color: white;
+    color: rgb(6, 72, 210);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 47px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.popup {
+    height: 92px;
+    width: 92px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+}
+
+.popup .popup-icon {
+    height: 56px;
+    width: 56px;
+    background-color: rgb(253, 246, 253);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.popup .popup-icon::after {
+    content: " ";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: rgb(255, 40, 75);
+    border: 1px solid rgb(203, 63, 98);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.popup .popup-icon img {
+    height: 30px;
+}
+
+.payment-alert {
+    height: 77px;
+    width: 188px;
+    position: absolute;
+    left: -175px;
+    top: 44px;
+    border-radius: 16px;
+    padding: 20px 14px;
+    backdrop-filter: blur(15px);
+}
+
+.alert-content {
+    display: flex;
+}
+.alert-content .from-pic {
+    height: 38px;
+    width: 38px;
+    background-color: rgb(253, 246, 253);
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.alert-content .alert-details {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(6, 72, 210);
+}
+.alert-content .title {
+    color: white;
+}
+
+.alert.popup {
+    left: -145px;
+    top: -50px;
+}
+.star .popup-icon::after {
+    display: none;
+}
+
+.alert.popup .popup-icon::after {
+    display: none;
+}
+
+.notification {
+    right: -60px;
+    top: -54px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.notification::before {
+    backdrop-filter: none;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bubbles-container {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+}
+
+.star {
+    top: 14.2%;
+    left: 5.8%;
+}
+
+/* bubbles */
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    backdrop-filter: blur(6px);
+    box-shadow: none;
+}
+.circle::before {
+    border: none;
+}
+
+.one {
+    height: 30px;
+    width: 30px;
+    top: 5%;
+    left: 19.9%;
+}
+.two,
+.three,
+.five {
+    height: 14px;
+    width: 14px;
+}
+.four {
+    height: 50px;
+    width: 50px;
+    top: 33.8%;
+    right: 30.25%;
+}
+.six {
+    height: 28px;
+    width: 28px;
+    top: 43%;
+    right: 19.9%;
+}
+.two {
+    top: 34.6%;
+    left: 28.7%;
+}
+.three {
+    top: 7%;
+    left: 57.3%;
+}
+.five {
+    top: 34.6%;
+    right: 15.5%;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        position: fixed;
+    }
+    .main-container {
+        padding: 0 25px;
+    }
+
+    .account-summary {
+        width: 100%;
+        height: 500px;
+    }
+
+    .account-summary-header {
+        padding: 30px;
+        height: auto;
+    }
+
+    .card-list {
+        overflow-x: scroll;
+        position: relative;
+        justify-content: flex-start !important;
+        width: 100vw;
+        padding: 40px 35px 30px 35px !important;
+    }
+    .card-list::-webkit-scrollbar {
+        display: none;
+    }
+    .card-list li {
+        transform: scale(0.85);
+    }
+
+    .card-options {
+        box-shadow: 6px 9px 11px 2px rgb(57 17 87 / 28%);
+    }
+    .payment-alert {
+        bottom: -50px;
+        top: auto;
+        left: 20%;
+    }
+    .notification {
+        transform: scale(0.75);
+        right: -30px;
+    }
+}
