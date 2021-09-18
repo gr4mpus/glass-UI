@@ -4,7 +4,7 @@
 
 A small demonstration of the frosted glass UI based on the article by [Michal Malewicz](https://uxdesign.cc/glassmorphism-in-user-interfaces-1f39bb1308c9).
 
-![demo image](ghttps://github.com/satanpr/glass-UI/blob/ghritachi/glassmorphism/sample.png?raw=true)
+![demo image](https://github.com/satanpr/glass-UI/blob/ghritachi/glassmorphism/sample.png?raw=true)
 ### Stack
 
 1. Template - HTML
