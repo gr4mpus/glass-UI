@@ -1,0 +1,339 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  color: #0054f9;
+}
+
+body {
+  background-image: url("../assets/images/background/background4.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0054f9;
+  padding: 2rem 2rem;
+}
+
+.f-white {
+  color: #ffffff;
+}
+
+.f-blue {
+  color: #0054f9;
+}
+
+.f-gray {
+  color: #a7adb0;
+}
+
+.f-bluegray {
+  color: #5c607e;
+}
+
+.f-gray-tp {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.pd-s {
+  padding: 1.6rem;
+}
+
+.pd-m {
+  padding: 2rem;
+}
+
+.pl-s {
+  padding-left: 1rem;
+}
+
+.bround {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+
+.icon-s {
+  width: 2rem;
+}
+
+.border-r {
+  border-radius: 2rem;
+}
+
+.bg-w {
+  background-color: #ffffff;
+}
+
+.shadow {
+  box-shadow: 10px 8px 31px -2px rgba(0, 0, 0, 0.38);
+}
+
+.blur-u {
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.32);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-n {
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.41);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-m {
+  backdrop-filter: blur(11px) saturate(200%);
+  -webkit-backdrop-filter: blur(11px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-acc {
+  backdrop-filter: blur(1px) saturate(200%);
+  -webkit-backdrop-filter: blur(1px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.91);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.white-card .upper-half {
+  background-color: #ffffff;
+}
+.white-card .lower-half {
+  background-color: #f2f1ff;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 1rem;
+}
+.btn:link, .btn:active, .btn:visited {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+.btn--rounded {
+  border-radius: 4rem;
+}
+.btn--white {
+  background-color: #ffffff;
+  color: #0054f9;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 5.4fr 3.2fr 3.8fr 1fr 0.8fr 13fr 0.8fr 0.6fr 6.6fr 2.4fr 3.6fr;
+}
+.notification {
+  grid-column: 10;
+  grid-row: 1;
+  position: relative;
+  z-index: 5;
+}
+
+.cart {
+  z-index: 5;
+  grid-column: 13;
+  grid-row: 28;
+}
+
+.new-payment {
+  z-index: 2;
+  grid-column: 3/span 3;
+  grid-row: 12/span 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.card-container {
+  grid-column: 5/span 5;
+  grid-row: 10/span 44;
+}
+.card-container .account-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 14%;
+}
+.card-container .card-details {
+  padding: 8rem 9%;
+}
+.card-container .card-details .cards-nav {
+  display: flex;
+  grid-column: 6/span 1;
+  margin-bottom: 2rem;
+}
+.card-container .card-details .cards-nav #selected {
+  border-radius: 2rem;
+  background-color: #ffffff;
+}
+.card-container .card-details .cards-nav h3 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.renew-card {
+  grid-column: 1/span 3;
+  grid-row: 26/span 6;
+  z-index: 4;
+}
+
+.online-card {
+  grid-column: 2/span 4;
+  grid-row: 28/span 14;
+}
+
+.shopping-card {
+  grid-column: 9/span 4;
+  grid-row: 28/span 14;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.card .upper-half {
+  padding: 1.5vw 2.5vw 0 2.5vw;
+}
+.card .upper-half .bank-name {
+  display: flex;
+}
+.card .upper-half .card-name {
+  padding: 1.5vw 0;
+}
+.card .lower-half {
+  padding: 1vw 2.5vw 1.5vw 2.5vw;
+}
+.card .lower-half .card-number {
+  letter-spacing: 0.4rem;
+}
+.card .lower-half div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-secondary .upper-half {
+  padding: 1vw 2.5vw 0 2.5vw;
+}
+.card-secondary .upper-half .bank-name {
+  display: flex;
+}
+.card-secondary .upper-half .card-name {
+  padding: 1vw 0;
+}
+.card-secondary .lower-half {
+  padding: 1vw 2.5vw 1vw 2.5vw;
+}
+.card-secondary .lower-half .card-number {
+  letter-spacing: 0.4rem;
+}
+.card-secondary .lower-half div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-outer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 2rem;
+}
+.circle-outer .circle-inner {
+  padding: 2rem;
+  border-radius: 50%;
+  position: relative;
+}
+.circle-outer .circle-inner .dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.circle-outer .circle-inner img {
+  height: 4rem;
+}
+
+.blur-ball1 {
+  z-index: 2;
+  grid-column: 8/span 2;
+  grid-row: 24/span 2;
+}
+.blur-ball1 div {
+  position: relative;
+  left: 50%;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.blur-ball2 {
+  z-index: 5;
+  grid-column: 11;
+  grid-row: 27;
+}
+.blur-ball2 div {
+  position: relative;
+  top: 50%;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
