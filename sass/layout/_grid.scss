@@ -1,0 +1,189 @@
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 5.4fr 3.2fr 3.8fr 1fr 0.8fr 13fr 0.8fr 0.6fr 6.6fr 2.4fr 3.6fr;
+
+    & > div {
+        // border: 2px solid rgb(15, 119, 160);
+    }
+}
+
+.notification {
+    grid-column: 10;
+    grid-row: 1;
+    position: relative;
+    z-index: 5;
+}
+
+.cart {
+    z-index: 5;
+    grid-column: 13;
+    grid-row: 28;
+}
+
+.new-payment {
+    z-index: 2;
+    grid-column: 3 / span 3;
+    grid-row: 12 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.card-container {
+    grid-column: 5 / span 5;
+    grid-row: 10 / span 44;
+    .account-balance {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 14%;
+    }
+
+    .card-details {
+        padding: 8rem 9%;
+        .cards-nav {
+            display: flex;
+            grid-column: 6 / span 1;
+            margin-bottom: 2rem;
+
+            #selected {
+                border-radius: 2rem;
+                background-color: $white;
+            }
+
+            h3 {
+                margin: 0;
+                flex: 1;
+                text-align: center;
+                padding: 2rem 0;
+            }
+        }
+    }
+}
+
+.renew-card {
+    grid-column: 1 / span 3;
+    grid-row: 26 / span 6;
+    z-index: 4;
+}
+
+.online-card {
+    grid-column: 2 / span 4;
+    grid-row: 28 / span 14;
+}
+
+.shopping-card {
+    grid-column: 9 / span 4;
+    grid-row: 28 / span 14;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 2rem;
+
+    .upper-half {
+        padding: 1.5vw 2.5vw 0 2.5vw;
+
+        .bank-name {
+            display: flex;
+        }
+
+        .card-name {
+            padding: 1.5vw 0;
+        }
+    }
+
+    .lower-half {
+        padding: 1vw 2.5vw 1.5vw 2.5vw;
+        .card-number {
+            letter-spacing: 0.4rem;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.card-secondary {
+    .upper-half {
+        padding: 1vw 2.5vw 0 2.5vw;
+
+        .bank-name {
+            display: flex;
+        }
+
+        .card-name {
+            padding: 1vw 0;
+        }
+    }
+
+    .lower-half {
+        padding: 1vw 2.5vw 1vw 2.5vw;
+
+        .card-number {
+            letter-spacing: 0.4rem;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.circle-outer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 2rem;
+    .circle-inner {
+        padding: 2rem;
+        border-radius: 50%;
+        position: relative;
+
+        .dot {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+        }
+        img {
+            height: 4rem;
+        }
+    }
+}
+
+.blur-ball1 {
+    z-index: 2;
+    grid-column: 8 / span 2;
+    grid-row: 24 / span 2;
+    // : relative;
+    div {
+        position: relative;
+        left: 50%;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+}
+
+.blur-ball2 {
+    z-index: 5;
+    grid-column: 11;
+    grid-row: 27;
+    div {
+        position: relative;
+        top: 50%;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
+}

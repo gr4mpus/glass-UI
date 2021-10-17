@@ -1,0 +1,20 @@
+.btn {
+    text-align: center;
+    border-radius: 1rem;
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        padding: 1rem;
+        display: block;
+    }
+
+    &--rounded {
+        border-radius: 4rem;
+    }
+
+    &--white {
+        background-color: $white;
+        color: $blue;
+    }
+}
