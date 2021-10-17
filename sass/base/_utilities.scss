@@ -1,0 +1,83 @@
+.text-center {
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.pd-s {
+    padding: 1.6rem;
+}
+
+.pd-m {
+    padding: 2rem;
+}
+
+.pl-s {
+    padding-left: 1rem;
+}
+
+.bround {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+}
+
+.icon-s {
+    width: 2rem;
+}
+
+.border-r {
+    border-radius: 2rem;
+    // border: 1px solid black;
+}
+
+.bg-w {
+    background-color: #ffffff;
+}
+
+.shadow {
+    box-shadow: 10px 8px 31px -2px rgba(0, 0, 0, 0.38);
+}
+
+.blur-u {
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.32);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-n {
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-m {
+    backdrop-filter: blur(11px) saturate(200%);
+    -webkit-backdrop-filter: blur(11px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.blur-acc {
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.91);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.white-card {
+    .upper-half {
+        background-color: $white;
+    }
+
+    .lower-half {
+        background-color: #f2f1ff;
+    }
+}
